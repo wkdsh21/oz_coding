@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+}
+
+html{
+    background-color: bisque;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 48px;
+    color: brown;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: "Nanum Pen Script", monospace;
+}
