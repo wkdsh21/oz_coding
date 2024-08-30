@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <title> 사용자 정보 입력받고 출력하기 </title>
+      <!-- <script src="js1회차.js"></script> -->
+  </head>
+    <body>
+
+      <h1 id="name"></h1>
+      <p id="animal"></p>
+      <p id="fruit"></p>
+
+      <script>
+        const nameElement = document.querySelector("#name")
+        let name = prompt("당신의 이름은?")
+        nameElement.textContent = name
+
+        const animalElement = document.querySelector("#animal")
+        let animal = prompt("좋아하는 동물은?")
+        animalElement.textContent = `좋아하는 동물: ${animal}`
+        
+        document.querySelector("#fruit")
+        .textContent = `좋아하는 과일: ${prompt("좋아하는 과일은?")}`
+
+      </script>
+    </body>
+</html>
