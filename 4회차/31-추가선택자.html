@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *,^,$ */
+        [width ^= "5"]{
+            border: 5px dashed red;
+
+        }
+        /* 직접적으로 하위 body > p */
+        body em{
+            color: blue;
+        }
+        /* 바로뒤에 +, 모든형제 ~   앞에는 적용 x*/
+        #sam + p{
+            color: orange;
+        }
+
+        </style>
+        
+</head>
+<body>
+    
+</body>
+</html>

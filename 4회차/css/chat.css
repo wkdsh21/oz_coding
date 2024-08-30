@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    height: 100%;
+    background-color: burlywood;
+  }
+  
+  .chat-screen {
+    height: calc(100% - 120px);
+  }
+  
+  .user {
+    background-color: beige;
+    padding: 20px;
+    height: 150px;
+  }
+  
+  .user__column {
+    float: left;
+  }
+  
+  .user__pic {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 40px;
+    border-color: darkblue;
+    background-color: black;
+  }
+  
+  .user__nick,.user__count {
+    font-family: "Nanum Pen Script", monospace;
+    margin: 5px;
+    font-size: 40px;
+  }
+  
+  .user__count {
+    font-size: 30px;
+    color: gray;
+  }
+  
+  .chat_form {
+    height: 120px;
+    background-color: white;
+  }
+  
+  .chat_form__field {
+    height: 120px;
+  }
+  
+  .chat-form__msg {
+    float: left;
+    width: calc(100% - 120px);
+    height: 120px;
+    border: none;
+    resize: none;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .chat-form__bt {
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: rgb(69, 210, 30);
+    font-size: 18px;
+  }
+  
+  .chat-form__msg:focus {
+    outline: none;
+  }
+  
+  .chat-form__bt:active {
+    background-color: purple;
+  }
+
+  .message{
+    padding-top: 10px;
+    padding-left:20px ;
+    border-radius: 30px;
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    tex
+  }
