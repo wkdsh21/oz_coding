@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2회차</title>
+</head>
+<body>
+    <h1 id="song_title" class="heading" title="VOS 2019 발매곡">
+        <span>다시 만날까 봐</span>
+    </h1>
+    <p class="lyrics">
+        인스타로 몰래 보는 너의 하루들
+    </p>
+    <p class="lyrics">
+        팔로우 다끊고서 좋아요는 왜
+    </p>
+
+    <script>
+        console.log(document.querySelector(".lyrics"))//NodeList
+        console.log(document.querySelectorAll(".lyrics"))
+        document.getElementsByClassName("lyrics") //HTMLCollection
+        const title =  document.getElementById("song_title")
+        console.log(typeof title)
+        title.textContent //태그없는 공백까지포함
+        title.innerText
+        title.className
+        title.style
+        title.title
+        //== 추상적값이 같으면 true
+        //=== 엄격하게 타입까지 일치하면 true
+        const div = document.getElementById("song_title")
+        const box = document.createElement("div")
+        box.style.color="blue"
+        box.style.width="200px"
+        box.style.height="200px"
+        box.textContent="ㄹㅇ"
+        div.appendChild(box)
+        //append 는 반환값 X
+
+        
+    </script>
+</body>
+</html>

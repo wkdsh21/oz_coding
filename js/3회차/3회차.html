@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3회차</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <button id="span">SPAN</button>
+    <script>
+        //호이스팅 가능
+        function sayYes(){
+            alert("yes")
+        }
+        //호이스팅 불가능
+        const sayNo = function(){
+            alert("no")
+        }
+
+        createParagraph()
+
+        function createParagraph(){
+            const p = document.createElement("p")
+            p.textContent="새로운 태그"
+            document.querySelector("#container").append(p)
+        }
+
+        const spanBtn = document.getElementById("span")
+        //on이벤트
+        spanBtn.onclick = function(){
+            alert("클릭했어요")
+        }
+
+        //이벤트리스너 추가
+        spanBtn.addEventListener("click",function(event){
+            alert("클릭했어요")
+        })
+
+        //event 객체
+        //event.target => spanBtn 객체
+        //event.target.id로 한 함수에서 id별로 다른 동작 가능
+
+        //target.value => input이나 form에서 사용자입력값을 확인할때
+        //form의 경우 여려개의 input이 있을경우 name으로 구별 ex)form.name.value
+        //제출발생시 새로고침(기본동작)을 없애고싶을때 event.preventDefault
+    </script>
+</body>
+</html>
