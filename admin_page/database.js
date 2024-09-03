@@ -52,11 +52,13 @@ let btn = document.querySelector("#flexSwitchCheckDefault")
 let btnLabel = document.querySelector(".form-check-label")
 btn.addEventListener("click",function(event){
     if(btn.checked){
-        document.querySelector("#product").classList.add('dark-mode');
+        document.querySelector("#product").classList.add('dark-mode')
+        document.querySelector("#product_table").classList.add('table-dark')
         btnLabel.textContent="다크모드 ON"
     }
     else{
-        document.querySelector("#product").classList.remove('dark-mode');
+        document.querySelector("#product").classList.remove('dark-mode')
+        document.querySelector("#product_table").classList.remove('table-dark')
         btnLabel.textContent="다크모드 OFF"
     }
 })
