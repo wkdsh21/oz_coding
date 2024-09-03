@@ -44,7 +44,7 @@ category.addEventListener('change', function() {
 setInterval(() =>{
     let today = new Date();  
     let clock = document.querySelector("#clock")
-    clock.textContent=`${today.getFullYear()}/${today.getMonth()}/${today.getDate()} ${today.getHours()} : ${today.getHours()} : ${today.getSeconds()}`
+    clock.textContent=`${today.getFullYear()}/${today.getMonth()}/${today.getDate()} ${today.getHours()} : ${today.getMinutes()} : ${today.getSeconds()}`
 },100)
 
 //다크모드 설정
