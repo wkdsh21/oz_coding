@@ -26,6 +26,7 @@ category.addEventListener('change', function() {
         dataTable.deleteRow(count-1)
         count-=1
     }
+    
     // 다시생성
     data.forEach((item) => {
         if(item.category==selectedValue || selectedValue=="전체"){
