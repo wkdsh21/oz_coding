@@ -40,6 +40,31 @@ category.addEventListener('change', function() {
     });
 });
 
+//검색창 조회
+let search = document.querySelector("#search_button")
+let searchData = document.querySelector("#search")
+search.addEventListener('click', function() {
+    const selectedValue = category.value;
+    const dataTable = document.getElementById('data-table');
+    //모두 제거후
+    let count=dataTable.rows.length
+    while(0<count){
+        dataTable.deleteRow(count-1)
+        count-=1
+    }
+
+    //다시 생성
+    data.forEach((item) => {
+        if((item.category==selectedValue || selectedValue=="전체") && item.product.includes(searchData.value)){
+            console.log("dd")
+            const row = dataTable.insertRow();
+            row.insertCell(0).innerHTML = item.category;
+            row.insertCell(1).innerHTML = item.brand;
+            row.insertCell(2).innerHTML = item.product;
+            row.insertCell(3).innerHTML = item.price;
+        }
+    });
+})
 
 //시계
 setInterval(() =>{
