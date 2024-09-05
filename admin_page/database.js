@@ -4,6 +4,18 @@ const data = [
     { category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠', price: '188,000' },
     { category: "신발", brand: 'Nike', product: '에어포스 1', price: '137,000' },
     { category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링', price: '29,000' },
+    { category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티2', price: '390,000' },
+    { category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠2', price: '188,000' },
+    { category: "신발", brand: 'Nike', product: '에어포스 12', price: '137,000' },
+    { category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링2', price: '29,000' },
+    { category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티3', price: '390,000' },
+    { category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠3', price: '188,000' },
+    { category: "신발", brand: 'Nike', product: '에어포스 13', price: '137,000' },
+    { category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링3', price: '29,000' },
+    { category: "상의", brand: 'Supreme', product: '슈프림 박스로고 후드티3', price: '390,000' },
+    { category: "하의", brand: 'DIESEL', product: '디젤 트랙 팬츠3', price: '188,000' },
+    { category: "신발", brand: 'Nike', product: '에어포스 13', price: '137,000' },
+    { category: "패션잡화", brand: 'Music&Goods', product: '빵빵이 키링3', price: '29,000' },
 ];
 const dataTable = document.getElementById('data-table');
 // 초기화
@@ -88,3 +100,32 @@ btn.addEventListener("click",function(event){
         btnLabel.textContent="다크모드 OFF"
     }
 })
+
+
+//페이지네이션
+let nav = document.querySelector("#navmain")
+nav.addEventListener('click', function(e) {
+    if(e.target.matches('li')) return;
+    console.log(e.target.textContent)
+
+
+    // const dataTable = document.getElementById('data-table');
+    // //모두 제거후
+    // let count=dataTable.rows.length
+    // while(0<count){
+    //     dataTable.deleteRow(count-1)
+    //     count-=1
+    // }
+    
+    // // 다시생성
+    // data.forEach((item) => {
+    //     if(item.category==selectedValue || selectedValue=="전체"){
+    //         console.log("dd")
+    //         const row = dataTable.insertRow();
+    //         row.insertCell(0).innerHTML = item.category;
+    //         row.insertCell(1).innerHTML = item.brand;
+    //         row.insertCell(2).innerHTML = item.product;
+    //         row.insertCell(3).innerHTML = item.price;
+    //     }
+    // });
+});
