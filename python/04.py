@@ -6,6 +6,7 @@
 # input().split() 리스트 언패킹, 리스트 패킹
 # a,b,c = 시퀀스자료형 ex)list, split(), range()
 # 리스트 메소드 append(x),extend(시퀀스),insert(인덱스,x) ,del list[index], reverse(), sort(), pop(), remove()
+# del 과 remove() 의 차이점 del 은 list[index:index] 인덱싱 가능 remove는 값으로 제거
 # 시퀀스 자료형 모두 index() , count() , split() 등등 사용가능 슬라이싱 대부분됨
 # 튜플 a=1,2 or a=(1,2)           a=(1) 일때는 int로 괄호연산으로 처리
 # "구분자".join(문자열 시퀀스) 단,딕셔너리는 key에만 연결된다. 문자열 메소드
