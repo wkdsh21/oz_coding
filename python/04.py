@@ -4,7 +4,7 @@
 # list(range(20,0,-1)) => [20,19,18 ~ 1]
 # list(range(20,0)) => []  20 > 0 이기때문에 빈리스트반환
 # input().split() 리스트 언패킹, 리스트 패킹
-# a,b,c = 시퀀스자료형 ex)list, range(), map()
+# a,b,c = iterable  ex)list, range(), map()
 # 리스트 메소드 append(x),extend(시퀀스),insert(인덱스,x) ,del list[index], reverse(), sort(), pop(), remove()
 # del 과 remove() 의 차이점 del 은 list[index:index] 인덱싱 가능 remove는 값으로 제거
 # 시퀀스 자료형 모두 index() , count() , split() 등등 사용가능 슬라이싱 대부분됨
