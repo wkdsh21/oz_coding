@@ -34,6 +34,6 @@ class BankingService:
                 elif select == 3:
                     print(f"잔액 : {user.account.getBalance()}")
                 elif select == 4:
-                    print(list(map(str, user.account.getTransaction())))
+                    print("\n".join(list(map(str, user.account.getTransaction()))))
                 elif select == 5:
                     break
