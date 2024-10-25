@@ -39,7 +39,7 @@ def fetch_from_list(target):
     return data_tree.has_key(target)
 
 
-target = 160_000_000
+target = 160_000
 
 print("리스트 조회 시작")
 start_time_list = timeit.default_timer()
